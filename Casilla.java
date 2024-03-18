@@ -12,6 +12,9 @@ public class Casilla {
     
     String nombreCasilla;
     String colorCasilla;
+    String [] casillaSuerte = {"Has ganado un premio en el concurso de belleza. Recibe 20 MM", "Hoy es tu cumpleaños. Recibe 10 MM de tu oponente", "Recibes una multa de tráfico. Paga 10 MM"};
+    boolean dueño = false;
+    int id_dueño;
     
     
     public Casilla(String nombreCasilla, String colorCasilla){
@@ -24,6 +27,22 @@ public class Casilla {
         
     }
     */
+    
+    public int casillaSuerte(){
+        int num = (int)Math.random()*3;
+        System.out.println(casillaSuerte[num]);
+        return num;
+    }
+    
+    
+    
+    
+    
+    public String toString(){
+        return "[" + nombreCasilla + "]";
+    }
+    
+    
     
     
 }
