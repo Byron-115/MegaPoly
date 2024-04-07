@@ -6,7 +6,7 @@ package megapoly;
 
 /**
  *
- * @author byron
+ * @author Byron Aurelio Panimboza Urresto
  */
 public class Casilla {
     
@@ -21,26 +21,17 @@ public class Casilla {
         this.nombreCasilla = nombreCasilla;
         this.colorCasilla = colorCasilla;
     }
-    /*
-    public void inicio(){
-        System.out.println("Has pasado por la casilla de inicio");
-        
-    }
-    */
     
     public int casillaSuerte(){
         int num = (int)Math.random()*3;
         System.out.println(casillaSuerte[num]);
         return num;
     }
-    
-    
-    
-    
-    
+    /*
     public String toString(){
         return "[" + nombreCasilla + "]";
     }
+    */
     
     
     
